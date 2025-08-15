@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Projetos | Portfólio</title>
+    <link rel="icon" href="images/profiles.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            background: #d092bc;
+            color: #fff;
+            padding: 24px 0;
+            text-align: center;   
+            flex-direction: row;    
+        }
+        header .perfil-texto {
+           display:flex;
+           justify-content: space-around;
+        }
+        .perfil {
+            display: block;
+            margin: 16px;
+            border-radius: 50%;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 40px;
+        }
+        .projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .projeto {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 24px;
+            transition: transform 0.2s;
+        }
+        .projeto:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+        .projeto h3 {
+            margin-top: 0;
+            color: #d092bc;
+        }
+        .projeto p {
+            color: #555;
+        }
+        .projeto a {
+            display: inline-block;
+            margin-top: 12px;
+            color: #d092bc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .projeto a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="perfil"  href="Portifolio.html" src="images/profiles.png" alt="Perfil" style="width: 100px; border-radius: 50%;"> </img>
+            
+        </div>
+        <div class="perfil-texto">
+            <h1>Meus Projetos</h1>
+            <p>Veja alguns dos projetos que desenvolvi</p>
+        </div>
+    </header>
+    <main>
+        <section class="projetos">
+            <div class="projeto">
+                <h3>Jogo da Forca</h3>
+                <p>Jogo da forca onde o jogador tenta adivinhar o nome de um animal sorteado de uma lista, antes que o desenho da forca seja completado.</p>
+                <img src="images/forca2.png" alt="Jogo da Forca" style="width: 100%; border-radius: 6px;">
+            </div>
+            <div class="projeto">
+                <h3>Site ForUFlix</h3>
+                <p>Este foi um site desenvolvido em um workshop de HTML e CSS, onde exploramos conceitos de marcação, estilização e organização de conteúdo. Adicionamos trailers dos projetos e implementamos um sistema de avaliação ao final para interação dos visitantes.</p>
+                <img src="images/foruflix.png" alt="Jogo da Forca" style="width: 100%; border-radius: 6px;">
+            </div>
+            <div class="projeto">
+                <h3>Smart Dispenser</h3>
+                <p>Dispenser automático para idosos que organiza e libera medicamentos nos horários certos, com alertas sonoros e visuais para evitar esquecimentos e garantir o uso correto das doses.</p>
+                <video class="video" controls width="120"><source src="images/smartdispenser.mp4" type="video/mp4"></video>
+            </div>
+           
+        </section>
+    </main>
+</body>
+</html>
