@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  
+</head>
+<body>
+
+  <!-- Imagens de Backgrownd  -->
+  <div class="background">
+      <img class="line" src="./assets/images/pattern-lines.svg" alt="Frontend Mentor Logo"> 
+      <img class="draw1" src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="Frontend Mentor Logo">
+      <img class="draw2" src="./assets/images/pattern-squiggly-line-top.svg" alt="Frontend Mentor Logo">
+     
+  </div>
+  
+  <main>
+     <img class="logo" src="./assets/images/logo-full.svg" alt="Frontend Mentor Logo">
+    <div class="titulo" >
+      <h1 class="sr-only">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <h3>Secure your spot at next year's biggest coding conference</h3>
+    </div>
+    
+    <div class="ticket-form">
+      <form novalidate>
+
+        <!-- Bloco de upload de avatar -->
+         
+        <div class="avatar-upload">
+          <label for="avatar-input" class="avatar-label"> Upload Avatar
+            <div class="avatar-box">
+              <input type="file"  id="avatar-input" accept="image/*" required>
+              <img id="avatar-preview" src="./assets/images/icon-upload.svg" alt="Pré-visualização do avatar" >  
+              Drag and drop or click to upload
+            </div>
+          </label>
+          <p class="avatar-info" >ⓘ Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+    
+        <!-- Bloco para preencher nome -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+    
+        <!-- Bloco para preencher email -->
+        <div class="form-group">
+          <label for="email">E-mail Adress</label>
+          <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+        </div>
+    
+        <!-- Bloco para preencher user do GitHub -->
+        <div class="form-group">
+          <label for="github">GitHub Username</label>
+          <input type="text" id="github" name="github" required placeholder="@yourusername"> 
+        </div>
+    
+        <!-- Botão para gerar ticket -->
+        <button type="submit" class="generate-btn">Generate My Ticket</button>
+      </form>
+    </div>
+  </main> 
+
+  <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <script src="form.js"></script>
+</body>
+</html>
