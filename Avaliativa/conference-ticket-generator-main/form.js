@@ -116,8 +116,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = emailInput.value.trim();
       if (!email) return 'Por favor, informe seu e-mail.';
       // Validação simples de e-mail
-      if (!email.includes('@') || !email.includes('.')) {
-          return 'Por favor, informe um e-mail válido.';
+      if (!email.includes('@') ) {
+          return 'Por favor, informe um e-mail válido com ("@").';
+      } 
+      else if (!email.includes('gmail') ) {
+          return 'Por favor, informe um e-mail google ("@gmail").';
       }
       return '';
   }
