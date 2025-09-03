@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #e4dddd;
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Card central */
+.profile-card {
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  margin: 5%;
+  padding: 5rem 2rem;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Avatar */
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin: 0 auto 0.5rem auto;
+  border: 2px solid #232323;
+}
+
+/* Nome e localização */
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+h2{
+   color: #cecaca; 
+}
+
+p{
+    color: #cecaca;  
+}
+
+
+
+
+
+/* Botões sociais */
+.social-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: #cecaca;  
+  background-color: #575855;
+  border-radius: 30px;
+  padding: 3%;
+}
+
+.social-link a {
+  background: #2d2d2d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.7rem 0;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  
+}
+
+a:hover {
+  background: #966f7e;
+  color: #232323;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .profile-card {
+    padding: 1.5rem 0.7rem;
+    max-width: 95vw;
+  }
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
